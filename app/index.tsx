@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import { Styles } from "../styles/index.js";
-import { colorPalette } from "@/constants/index.js";
+import { colorPalette } from "@/constants/colors.js";
 import Feather from "@expo/vector-icons/Feather";
 import { Link, useNavigation } from "expo-router";
 import { useEffect } from "react";
@@ -12,7 +12,7 @@ const WelcomeScreen = () => {
   }, []);
 
   return (
-    <View style={Styles.container}>
+    <View style={Styles.welcomeContainer}>
       <View style={{ paddingTop: 40 }}>
         <Image
           style={{ width: 300, height: 300 }}
@@ -30,7 +30,7 @@ const WelcomeScreen = () => {
         <Text
           style={{
             fontSize: 60,
-            fontWeight: "bold",
+            fontWeight: "heavy",
             fontFamily: "FunnelDisplay-ExtraBold",
             color: "#fff",
           }}
@@ -40,6 +40,7 @@ const WelcomeScreen = () => {
         <Text
           style={{
             fontSize: 20,
+            fontWeight: "bold",
             color: "#fff",
           }}
         >

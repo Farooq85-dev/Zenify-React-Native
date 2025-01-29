@@ -1,14 +1,18 @@
 import { StyleSheet } from "react-native";
-import { colorPalette } from "../constants/index.js";
+import { colorPalette } from "../constants/colors.js";
 
 export const Styles = StyleSheet.create({
-  container: {
+  welcomeContainer: {
     flex: 1,
-    flexDirection: "column",
     justifyContent: "space-between",
-    alignItems: "center",
     width: "100%",
     backgroundColor: colorPalette.welcomeBg,
     padding: 30,
+  },
+  onBoardingContainer: {
+    flex: 1,
+    width: "100%",
+    padding: 20,
+    backgroundColor: colorPalette.onBoardingBg,
   },
 });

@@ -1,4 +1,4 @@
-import { colorPalette } from "@/constants";
+import { colorPalette } from "@/constants/colors.js";
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
