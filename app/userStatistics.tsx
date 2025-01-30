@@ -1,12 +1,19 @@
-import { useNavigation } from "expo-router";
+import { colorPalette } from "@/constants/colors";
+import { Link, useNavigation, useRouter } from "expo-router";
 import { useEffect } from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 
 const UserStatisticsScreen = () => {
   const navigation = useNavigation();
+  const router = useRouter();
   useEffect(() => {
     navigation.setOptions({ headerTitle: "User Profile" });
   }, []);
+
+  // Going to first Screen and resetting the stack...
+  const gotoHomeHandler = () => {
+    router.dismissAll();
+  };
 
   return (
     <View style={{ flex: 1, padding: 20, width: "100%" }}>
@@ -116,6 +123,35 @@ const UserStatisticsScreen = () => {
               Courses saved
             </Text>
           </View>
+        </View>
+        <View style={{ width: "100%" }}>
+          <TouchableOpacity
+            style={{
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 8,
+              paddingHorizontal: 16,
+              paddingVertical: 10,
+              borderRadius: 50,
+              backgroundColor: colorPalette.welcomeBtnBg,
+              shadowColor: "#000",
+              shadowOffset: { width: 0, height: 4 },
+              shadowOpacity: 0.1,
+              shadowRadius: 5,
+              elevation: 5,
+            }}
+            onPress={gotoHomeHandler}
+          >
+            <Text
+              style={{
+                fontWeight: "bold",
+                fontSize: 30,
+              }}
+            >
+              Goto Home
+            </Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
