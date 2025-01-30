@@ -48,3 +48,41 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## ScreenShots
+
+### Welcome Screen
+
+![](./assets/images/Welocome-Screen.jpg)
+
+### On Boarding Screen
+
+![](./assets/images/OnBoarding-Screen.jpg)
+
+### Home Screen
+
+![](./assets/images/Home-Screen.jpg)
+
+### Search Screen
+
+![](./assets/images/Search-Screen.jpg)
+
+### Search Results Screen
+
+![](./assets/images/Search-Results-Screen.jpg)
+
+### Meditation Preview Screen
+
+![](./assets/images/Meditation-Preview-Screen.jpg)
+
+### Listening Screen
+
+![](./assets/images/Listening-Screen.jpg)
+
+### Meditation Finished Screen
+
+![](./assets/images/Finished-Screen.jpg)
+
+### User Statistics Screen
+
+![](./assets/images/User-Profile-Screen.jpg)
