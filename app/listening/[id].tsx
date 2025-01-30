@@ -7,7 +7,7 @@ import Feather from "@expo/vector-icons/Feather";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Entypo from "@expo/vector-icons/Entypo";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import { useNavigation } from "expo-router";
+import { Link, useNavigation } from "expo-router";
 
 const Listening = () => {
   const navigation = useNavigation();
@@ -72,7 +72,9 @@ const Listening = () => {
               size={30}
               color="black"
             />
-            <AntDesign name="play" size={60} color="#dabbfa" />
+            <Link href={"/meditationFinish"}>
+              <AntDesign name="play" size={60} color="#dabbfa" />
+            </Link>
             <Entypo name="controller-next" size={30} color="black" />
             <Feather name="repeat" size={30} color="black" />
           </View>
