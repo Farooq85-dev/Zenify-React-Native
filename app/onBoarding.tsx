@@ -9,10 +9,15 @@ import {
 import { goals } from "../constants/goals.js";
 import { colorPalette } from "@/constants/colors.js";
 import { Styles } from "@/styles/index.js";
-import { Link } from "expo-router";
-import Feather from "@expo/vector-icons/Feather.js";
+import { Link, useNavigation } from "expo-router";
+import { useEffect } from "react";
 
 const OnBoarding = () => {
+  const navigation = useNavigation();
+  useEffect(() => {
+    navigation.setOptions({ headerTitle: "On Boarding" });
+  }, []);
+
   const Item = ({ title, image }: { title: string; image: string }) => (
     <View style={styles.itemContainer}>
       <View style={styles.imageContainer}>
