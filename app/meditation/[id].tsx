@@ -1,6 +1,6 @@
 import { colorPalette } from "@/constants/colors";
 import { Styles } from "@/styles";
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { Link, useLocalSearchParams, useNavigation } from "expo-router";
 import { useEffect } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import Entypo from "@expo/vector-icons/Entypo";
@@ -123,15 +123,22 @@ const MeditationPreview = () => {
               elevation: 5,
             }}
           >
-            <Text
-              style={{
-                fontWeight: "bold",
-                fontSize: 20,
-                fontFamily: "FunnelDisplay-Regular",
+            <Link
+              href={{
+                pathname: "/listening/[id]",
+                params: { title: title, image: image },
               }}
             >
-              Start listening
-            </Text>
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  fontSize: 20,
+                  fontFamily: "FunnelDisplay-Regular",
+                }}
+              >
+                Start listening
+              </Text>
+            </Link>
           </TouchableOpacity>
         </View>
       </View>
