@@ -27,4 +27,9 @@ export const Styles = StyleSheet.create({
     padding: 20,
     backgroundColor: colorPalette.onBoardingBg,
   },
+  meditationContainer: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: colorPalette.onBoardingBg,
+  },
 });

@@ -1,14 +1,16 @@
 import { colorPalette } from "@/constants/colors";
 import { Styles } from "@/styles";
-import { useNavigation } from "expo-router";
+import { Link, useNavigation } from "expo-router";
 import { useEffect } from "react";
 import { View, Text, Image } from "react-native";
+import AntDesign from "@expo/vector-icons/AntDesign";
 
 const SearchResults = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: '"Calm"' });
   }, []);
+
   return (
     <View style={Styles.searchContainer}>
       <Text
@@ -69,14 +71,42 @@ const SearchResults = () => {
                 <Text style={{ fontWeight: "bold", fontSize: 16 }}>15min</Text>
               </View>
             </View>
-            <Image
-              src="https://assets.api.uizard.io/api/cdn/stream/b6eed7c8-ad8d-4dd3-9c24-9290ab89fb98.png"
+            <View
               style={{
-                width: 160,
-                height: 160,
-                objectFit: "contain",
+                position: "relative",
               }}
-            />
+            >
+              <Link
+                href={{
+                  pathname: "/meditation/[id]",
+                  params: {
+                    title: "Calm body  calm mind",
+                    description:
+                      "Ease your mind and relax. Practice your mindfulness and self-awareness. Train your attention and achieve emotionally calm and stable state of mind.",
+                    image:
+                      "https://assets.api.uizard.io/api/cdn/stream/b6eed7c8-ad8d-4dd3-9c24-9290ab89fb98.png",
+                    downloads: 1002,
+                    time: 15,
+                  },
+                }}
+                style={{
+                  position: "absolute",
+                  right: 0,
+                  top: 10,
+                  zIndex: 1000,
+                }}
+              >
+                <AntDesign name="play" size={40} color="green" />
+              </Link>
+              <Image
+                src="https://assets.api.uizard.io/api/cdn/stream/b6eed7c8-ad8d-4dd3-9c24-9290ab89fb98.png"
+                style={{
+                  width: 160,
+                  height: 160,
+                  objectFit: "contain",
+                }}
+              />
+            </View>
           </View>
         </View>
         <Text
@@ -121,14 +151,42 @@ const SearchResults = () => {
                 <Text style={{ fontWeight: "bold", fontSize: 16 }}>23min</Text>
               </View>
             </View>
-            <Image
-              src="https://assets.api.uizard.io/api/cdn/stream/3354342c-3f99-4f08-85a0-a8be68e9d1fc.png"
+            <View
               style={{
-                width: 160,
-                height: 160,
-                objectFit: "contain",
+                position: "relative",
               }}
-            />
+            >
+              <Link
+                href={{
+                  pathname: "/meditation/[id]",
+                  params: {
+                    title: "Become as calm as a cat",
+                    description:
+                      "It's a gentle reminder to slow down, breathe deeply, and trust that, like a cat, you can find comfort and calmness in any situation.",
+                    image:
+                      "https://assets.api.uizard.io/api/cdn/stream/3354342c-3f99-4f08-85a0-a8be68e9d1fc.png",
+                    downloads: 333,
+                    time: 23,
+                  },
+                }}
+                style={{
+                  position: "absolute",
+                  right: 0,
+                  top: 10,
+                  zIndex: 1000,
+                }}
+              >
+                <AntDesign name="play" size={40} color="green" />
+              </Link>
+              <Image
+                src="https://assets.api.uizard.io/api/cdn/stream/3354342c-3f99-4f08-85a0-a8be68e9d1fc.png"
+                style={{
+                  width: 160,
+                  height: 160,
+                  objectFit: "contain",
+                }}
+              />
+            </View>
           </View>
         </View>
       </View>
