@@ -84,7 +84,7 @@ const home = () => {
                   width: 70,
                   paddingVertical: 4,
                   alignItems: "center",
-                  borderRadius: 4,
+                  borderRadius: 50,
                 }}
               >
                 <Text style={{ fontWeight: "bold", fontSize: 16 }}>21min</Text>
