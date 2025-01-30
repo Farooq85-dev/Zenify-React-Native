@@ -47,16 +47,25 @@ const OnBoarding = () => {
       <View style={{ width: "100%" }}>
         <TouchableOpacity
           style={{
+            flexDirection: "row",
+            justifyContent: "center",
             alignItems: "center",
-            paddingVertical: 7,
+            gap: 8,
+            paddingHorizontal: 16,
+            paddingVertical: 10,
             borderRadius: 50,
             backgroundColor: colorPalette.welcomeBtnBg,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 4 },
+            shadowOpacity: 0.1,
+            shadowRadius: 5,
+            elevation: 5,
           }}
         >
           <Link href={"/home"}>
             <Text
               style={{
-                fontWeight: "700",
+                fontWeight: "bold",
                 fontSize: 20,
                 fontFamily: "FunnelDisplay-Regular",
               }}

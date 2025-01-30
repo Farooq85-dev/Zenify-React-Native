@@ -1,5 +1,5 @@
 import { Styles } from "@/styles";
-import { useNavigation } from "expo-router";
+import { Link, useNavigation } from "expo-router";
 import { useEffect } from "react";
 import { View, Text, Image, FlatList } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
@@ -40,7 +40,9 @@ const home = () => {
             >
               Good morning!
             </Text>
-            <FontAwesome name="search" size={30} color="black" />
+            <Link href={"/search"}>
+              <FontAwesome name="search" size={30} color="black" />
+            </Link>
           </View>
           <View>
             <Text

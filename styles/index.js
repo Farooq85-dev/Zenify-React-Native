@@ -21,4 +21,10 @@ export const Styles = StyleSheet.create({
     padding: 20,
     backgroundColor: colorPalette.onBoardingBg,
   },
+  searchContainer: {
+    flex: 1,
+    width: "100%",
+    padding: 20,
+    backgroundColor: colorPalette.onBoardingBg,
+  },
 });

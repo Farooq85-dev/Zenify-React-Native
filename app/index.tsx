@@ -1,7 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import { Styles } from "../styles/index.js";
 import { colorPalette } from "@/constants/colors.js";
-import Feather from "@expo/vector-icons/Feather";
 import { Link, useNavigation } from "expo-router";
 import { useEffect } from "react";
 
@@ -53,24 +52,28 @@ const WelcomeScreen = () => {
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-            gap: 4,
-            paddingHorizontal: 14,
-            paddingVertical: 7,
+            gap: 8,
+            paddingHorizontal: 16,
+            paddingVertical: 10,
             borderRadius: 50,
             backgroundColor: colorPalette.welcomeBtnBg,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 4 },
+            shadowOpacity: 0.1,
+            shadowRadius: 5,
+            elevation: 5,
           }}
         >
           <Link href={"/onBoarding"}>
             <Text
               style={{
-                fontWeight: "700",
+                fontWeight: "bold",
                 fontSize: 20,
                 fontFamily: "FunnelDisplay-Regular",
               }}
             >
               Start
             </Text>
-            <Feather name="arrow-right" size={25} />
           </Link>
         </TouchableOpacity>
       </View>
