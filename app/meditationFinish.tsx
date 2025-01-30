@@ -4,7 +4,7 @@ import { Link, useNavigation } from "expo-router";
 import { useEffect } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
-const meditationFinish = () => {
+const MeditationFinishScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: "Meditation Finished" });
@@ -66,7 +66,6 @@ const meditationFinish = () => {
                 style={{
                   fontWeight: "bold",
                   fontSize: 20,
-                  fontFamily: "FunnelDisplay-bold",
                 }}
               >
                 See My Statistics
@@ -79,4 +78,4 @@ const meditationFinish = () => {
   );
 };
 
-export default meditationFinish;
+export default MeditationFinishScreen;

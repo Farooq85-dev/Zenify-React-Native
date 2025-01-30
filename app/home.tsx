@@ -6,7 +6,7 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { colorPalette } from "@/constants/colors";
 import { moods } from "../constants/moods.js";
 
-const home = () => {
+const HomeScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: "Home" });
@@ -34,7 +34,6 @@ const home = () => {
             <Text
               style={{
                 fontWeight: "bold",
-                fontFamily: "FunnelDisplay-Bold",
                 fontSize: 30,
               }}
             >
@@ -48,7 +47,6 @@ const home = () => {
             <Text
               style={{
                 fontWeight: "black",
-                fontFamily: "FunnelDisplay-Bold",
                 fontSize: 18,
               }}
             >
@@ -72,7 +70,6 @@ const home = () => {
                 style={{
                   fontSize: 20,
                   fontWeight: "bold",
-                  fontFamily: "FunnelDisplay-ExtraBold",
                   lineHeight: 28,
                 }}
               >
@@ -158,4 +155,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default HomeScreen;

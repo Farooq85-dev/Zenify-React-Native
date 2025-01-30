@@ -9,7 +9,7 @@ import Entypo from "@expo/vector-icons/Entypo";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { Link, useNavigation } from "expo-router";
 
-const Listening = () => {
+const ListeningScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: "Listening" });
@@ -84,4 +84,4 @@ const Listening = () => {
   );
 };
 
-export default Listening;
+export default ListeningScreen;

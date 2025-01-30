@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { View, Text, Image } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 
-const SearchResults = () => {
+const SearchResultsScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: '"Calm"' });
@@ -53,7 +53,6 @@ const SearchResults = () => {
                 style={{
                   fontSize: 20,
                   fontWeight: "bold",
-                  fontFamily: "FunnelDisplay-ExtraBold",
                   lineHeight: 28,
                 }}
               >
@@ -133,7 +132,6 @@ const SearchResults = () => {
                 style={{
                   fontSize: 20,
                   fontWeight: "bold",
-                  fontFamily: "FunnelDisplay-ExtraBold",
                   lineHeight: 28,
                 }}
               >
@@ -194,4 +192,4 @@ const SearchResults = () => {
   );
 };
 
-export default SearchResults;
+export default SearchResultsScreen;

@@ -2,7 +2,7 @@ import { useNavigation } from "expo-router";
 import { useEffect } from "react";
 import { View, Text, Image } from "react-native";
 
-const UserStatistics = () => {
+const UserStatisticsScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: "User Profile" });
@@ -122,4 +122,4 @@ const UserStatistics = () => {
   );
 };
 
-export default UserStatistics;
+export default UserStatisticsScreen;

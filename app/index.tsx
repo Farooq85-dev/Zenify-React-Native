@@ -16,7 +16,9 @@ const WelcomeScreen = () => {
         <Image
           style={{ width: 300, height: 300 }}
           alt="Loading..."
-          source={require("../assets/images/welcome-img.png")}
+          source={{
+            uri: "https://assets.api.uizard.io/api/cdn/stream/d98451a2-a9df-4d8e-8e76-043998d7ab63.png",
+          }}
         />
       </View>
       <View
@@ -29,8 +31,7 @@ const WelcomeScreen = () => {
         <Text
           style={{
             fontSize: 60,
-            fontWeight: "heavy",
-            fontFamily: "FunnelDisplay-ExtraBold",
+            fontWeight: "bold",
             color: "#fff",
           }}
         >
@@ -68,8 +69,7 @@ const WelcomeScreen = () => {
             <Text
               style={{
                 fontWeight: "bold",
-                fontSize: 20,
-                fontFamily: "FunnelDisplay-Regular",
+                fontSize: 30,
               }}
             >
               Start

@@ -12,7 +12,7 @@ import { colorPalette } from "@/constants/colors";
 import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { moods } from "@/constants/moods";
 
-const Search = () => {
+const SearchScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerTitle: "Search" });
@@ -35,7 +35,7 @@ const Search = () => {
                 paddingLeft: 50,
                 paddingVertical: 15,
                 borderRadius: 50,
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: "bold",
               }}
             />
@@ -50,7 +50,6 @@ const Search = () => {
               color="black"
             />
           </View>
-
           <View
             style={{
               flexDirection: "column",
@@ -110,8 +109,7 @@ const Search = () => {
               <Text
                 style={{
                   fontWeight: "bold",
-                  fontSize: 20,
-                  fontFamily: "FunnelDisplay-Bold",
+                  fontSize: 30,
                 }}
               >
                 Search
@@ -124,4 +122,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchScreen;

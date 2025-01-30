@@ -6,7 +6,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 
-const MeditationPreview = () => {
+const MeditationPreviewScreen = () => {
   const { title, description, image, time, downloads } = useLocalSearchParams();
   const navigation = useNavigation();
   useEffect(() => {
@@ -133,7 +133,6 @@ const MeditationPreview = () => {
                 style={{
                   fontWeight: "bold",
                   fontSize: 20,
-                  fontFamily: "FunnelDisplay-Regular",
                 }}
               >
                 Start listening
@@ -146,4 +145,4 @@ const MeditationPreview = () => {
   );
 };
 
-export default MeditationPreview;
+export default MeditationPreviewScreen;
