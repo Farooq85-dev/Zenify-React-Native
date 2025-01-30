@@ -7,7 +7,7 @@ export const Styles = StyleSheet.create({
     justifyContent: "space-between",
     width: "100%",
     backgroundColor: colorPalette.welcomeBg,
-    padding: 30,
+    padding: 20,
   },
   onBoardingContainer: {
     flex: 1,

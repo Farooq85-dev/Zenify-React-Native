@@ -1,6 +1,6 @@
 import { colorPalette } from "@/constants/colors";
 import { Styles } from "@/styles";
-import { useNavigation } from "expo-router";
+import { Link, useNavigation } from "expo-router";
 import { useEffect } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 
@@ -61,15 +61,17 @@ const meditationFinish = () => {
               elevation: 5,
             }}
           >
-            <Text
-              style={{
-                fontWeight: "bold",
-                fontSize: 20,
-                fontFamily: "FunnelDisplay-bold",
-              }}
-            >
-              See My Statistics
-            </Text>
+            <Link href={"/userStatistics"}>
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  fontSize: 20,
+                  fontFamily: "FunnelDisplay-bold",
+                }}
+              >
+                See My Statistics
+              </Text>
+            </Link>
           </TouchableOpacity>
         </View>
       </View>
