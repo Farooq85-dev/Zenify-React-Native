@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#10151a"
-      }
+      },
+      "package": "com.muhammadfarooq.zenify"
     },
     "web": {
       "bundler": "metro",
@@ -47,6 +48,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8dcef2b0-5353-4405-8279-51159bf3156f"
+      }
+    },
+    "owner": "muhammad-farooq"
   }
 }
